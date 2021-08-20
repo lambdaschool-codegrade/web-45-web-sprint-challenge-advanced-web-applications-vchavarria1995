@@ -97,7 +97,7 @@ Your finished project must include all of the following requirements. **Unlike o
 
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. Add your answers to the questions within `interview_answers.md` file. These will not be counted as a part of your sprint score but will be helpful for preparing you for your endorsement interview, and enhancing overall understanding.
 
-1. Explain what a token is used for.
-2. What steps can you take in your web apps to keep your data secure?
-3. Describe how web servers work.
-4. Which HTTP methods can be mapped to the CRUD acronym that we use when interfacing with APIs/Servers.
+1. Explain what a token is used for. Tokens are strings of cryptic text stored client side that are used for authorization on the client side.
+2. What steps can you take in your web apps to keep your data secure? Having protected routes that require authentication.
+3. Describe how web servers work. The way web servers work is by displaying website content through storing, processing and delivering webpages to users through specific URLs.
+4. Which HTTP methods can be mapped to the CRUD acronym that we use when interfacing with APIs/Servers. Creates = post requests Read = get requests Update = put requests Delete = delete requests
