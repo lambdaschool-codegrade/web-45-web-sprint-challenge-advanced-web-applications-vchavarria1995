@@ -9,24 +9,24 @@ const Login = () => {
   const [ form, setForm ] = useState({ username: '', password: '' })
   const { push } = useHistory()
 
-  const onChange = event => {
+  const onChange = e => {
     setForm({
       ...form, 
-      [event.target.name]: event.target.value
+      [e.target.name]: e.target.value
     })
   }
 
-  const handleSubmit = event => {
-    event.preventDefault()
+  const handleSubmit = e => {
+    e.preventDefault()
     axiosWithAuth()
     .post('/login', form)
-    .then(response => {
-      console.log(response.data);
-      localStorage.setItem('token', response.data.payload)
+    .then(res => {
+      console.log(res.data);
+      localStorage.setItem('token', res.data.payload)
       push('/bubbles')
     })
-    .catch(error => {
-      console.log(error);
+    .catch(err => {
+      console.log(err);
     })
   }
 
