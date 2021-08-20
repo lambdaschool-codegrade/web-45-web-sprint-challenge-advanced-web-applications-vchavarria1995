@@ -64,7 +64,7 @@ test("Renders appropriate number of colors passed in through mock", async ()=> {
     render(<BubblePage />);
     await waitFor(() => []);
     const list = screen.getAllByTestId('color');
-    const lilac = screen.getByText(/limegreen/i);
+    const limegreen = screen.getByText(/limegreen/i);
     expect(list).toHaveLength(5);
-    expect(lilac).toBeInTheDocument();
+    expect(limegreen).toBeInTheDocument();
 });
